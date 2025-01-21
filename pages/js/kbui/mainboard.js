@@ -108,15 +108,13 @@ addInitializer('connected', () => {
             ] = `${parms.origin_x}px ${parms.origin_y}px`;
         }
 
-        const isBigKey = parms.outercapwidth > 60;
-
         const keystyle = {
             left: `${parms.outercapx * 1.05 + 3}px`,
             top: `${parms.outercapy * 1.05 + 3}px`,
             width: `${parms.outercapwidth}px`,
             height: `${parms.outercapheight}px`,
             'border-width': `${sizes.strokeWidth}px`,
-            'border-radius': `8px`,
+            'border-radius': `${sizes.roundOuter}px`,
         };
 
         const keyboxstyle = {
@@ -151,7 +149,7 @@ addInitializer('connected', () => {
         const keyimage = EL(
             'div',
             {
-                class: !isBigKey ? `key keybg` : `key bigkey`,
+                class: 'key keybg',
                 style: keystyle,
             },
             keybox
@@ -170,7 +168,6 @@ addInitializer('connected', () => {
             cap: keycap,
             image: keybox,
             id: kmid,
-            isBigKey: isBigKey,
             ...opts,
         };
         return keydata;

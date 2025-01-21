@@ -23,7 +23,7 @@ const KLE = {
   // - roundInner/roundOuter == corner roundness for inner/outer borders
   var unitSizes = {
     px : {
-      unit : 60,
+      unit : 64,
       strokeWidth: 1,
       "" : { profile: "" , keySpacing: 0, bevelMargin: 6, bevelOffsetTop: 3, bevelOffsetBottom: 3, padding: 3, roundOuter: 5, roundInner: 3 },
       "DCS" : { profile: "DCS", keySpacing: 0, bevelMargin: 6, bevelOffsetTop: 3, bevelOffsetBottom: 3, padding: 3, roundOuter: 5, roundInner: 3 },
