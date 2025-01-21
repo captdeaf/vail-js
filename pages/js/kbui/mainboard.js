@@ -133,9 +133,9 @@ addInitializer('connected', () => {
             float_right = { 3: true, 4: true, 31: true, 30: true };
         }
         if (float_right[kmid]) {
-            keyboxstyle.right = '0px';
+            keyboxstyle.right = '2px';
         } else if (float_left[kmid]) {
-            keyboxstyle.left = '0px';
+            keyboxstyle.left = '2px';
         }
         const keybox = EL(
             'div',
